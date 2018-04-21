@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding-top: 60px; /* padding that compensates height of a fixed header */
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#gallery {
+    padding: 0 0;
+    margin: 0 auto;
+}
+
+.post {
+    display: inline-block;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: white;
+    margin: 10px;
+    /*padding: 5px;*/
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+
+    transition-duration: 0.2s;
+    transition-property: box-shadow;
+}
+
+.post:hover {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.author-login {
+    font-size: 12px;
+    margin: 4px;
+    color: #999999;
+}
+
+.img {
+    margin: 20px;
+    margin-top: 0;
+    width: 280px;
+    height: 280px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.like {
+    width: 140px;
+    height: 35px;
+    color: salmon;
+    outline: none;
+    border: solid 1px salmon;
+    border-bottom-left-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+
+    transition-duration: 0.2s;
+    transition-property: background-color, color;
+}
+
+.like:hover {
+    cursor: pointer;
+    color: white;
+    background-color: salmon;
+}
+
+.comment {
+    width: 140px;
+    height: 35px;
+    border: none;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 14px;
+    background-color: steelblue;
+}
+
+.comment:hover {
+    cursor: pointer;
+    background-color: #4691c3;
+}
+
+footer {
+    margin-top: 10px;
+    padding: 10px;
+    color: #999999;
+    font-size: 12px;
+    background-color: #ebebeb;
+}

@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding-top: 60px; /* padding that compensates height of a fixed header */
+    background-color: whitesmoke;
+}
+
+.form-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: fit-content;
+    height: fit-content;
+    padding: 24px;
+    border-radius: 8px;
+    /*text-align: center;*/
+    transform: translate(-50%, -50%);
+}
+
+.form-main form {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+
+.form-main h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #505050;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.form-main p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0;
+    color: rgb(120, 120, 120);
+}
+
+.form-main input {
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin-top: 8px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+
+    transition-duration: 0.2s;
+    transition-property: box-shadow;
+}
+
+.form-main input:hover {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.form-main input:focus {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.form-main button {
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: lightcoral;
+    color: white;
+
+    transition-duration: 0.2s;
+    transition-property: background-color, border;
+}
+
+.form-main button:hover {
+    cursor: pointer;
+    background-color: #e17272;
+}
