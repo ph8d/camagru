@@ -1,0 +1,99 @@
+.header-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header-main button {
+    width: 80px;
+    height: 100%;
+    background-color: steelblue;
+    outline: none;
+    border: none;
+    color: #505050;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#logo-btn {
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    left: 1%;
+    font-weight: bold;
+}
+
+#login-btn {
+    width: 100px;
+    height: 100%;
+}
+
+.header-main button:hover {
+    cursor: pointer;
+    background-color: #fd746c;
+    background: -moz-linear-gradient(left, #fd746c 5%, #ff9068 95%);
+    background: -webkit-linear-gradient(left, #fd746c 5%, #ff9068 95%);
+    background: linear-gradient(left, #fd746c 5%, #ff9068 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#drop-down-list
+{
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    right: 1%;
+}
+
+#list-content
+{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+#list-content button
+{
+    width: 100%;
+    height: 60px;
+    background-color: steelblue;
+    outline: none;
+    border: none;
+    color: #505050;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#drop-down-list:hover #list-content
+{
+    display: block;
+}
+
+.list-divider {
+    /*height: 0;*/
+    margin: 0;
+    margin-left: 10px;
+    border: none;
+    width: 80px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: whitesmoke;
+}

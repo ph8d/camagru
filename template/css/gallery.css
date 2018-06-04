@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding-top: 60px; /* padding that compensates height of a fixed header */
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#main {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#new-photo {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    outline: 0;
+    border: 0;
+    color: whitesmoke;
+    background-color: #fd746c;
+    background: -moz-linear-gradient(left, #fd746c 0%, #ff9068 100%);
+    background: -webkit-linear-gradient(left, #fd746c 0%, #ff9068 100%);
+    background: linear-gradient(left, #fd746c 0%, #ff9068 100%);
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+#new-photo:hover
+{
+    cursor: pointer;
+    background-color: #ff8374;
+}
+
+#new-photo:active
+{
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#cam-icon {
+    width: 32px;
+    height: auto;
+}
+
+.post {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+
+    transition-duration: 0.2s;
+    transition-property: box-shadow;
+}
+
+.post:hover {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.author-id {
+    font-size: 12px;
+    margin: 4px;
+    color: #999999;
+    text-decoration: none;
+}
+
+.author-id:hover {
+    text-decoration: underline;
+}
+
+.img {
+    margin: 20px;
+    margin-top: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.img img {
+    width: 300px;
+}
+
+.action-buttons {
+    margin-bottom: 20px;
+}
+
+.like {
+    width: 150px;
+    height: 35px;
+    outline: none;
+    border: solid 1px #fd746c;
+    text-decoration: none;
+    font-size: 14px;
+
+    transition-duration: 0.2s;
+    transition-property: background-color, color;
+}
+
+.like.unliked {
+    color: salmon;
+    background-color: rgba(0,0,0,0);
+}
+
+.like.liked {
+    cursor: pointer;
+    color: white;
+    background-color: #fd746c;
+}
+
+.like:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #fd746c;
+}
+
+.comment {
+    width: 150px;
+    height: 35px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    background-color: steelblue;
+}
+
+.comment:hover {
+    cursor: pointer;
+    background-color: #4691c3;
+}
+
+.pagination-container {
+    display: flex;
+    padding: 20px 0;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination a {
+    color: #505050;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    background-color: white;
+}
+
+.pagination a:hover:not(.curr-page) {
+    background-color: #fd746c;
+    color: white;
+    border: 1px solid #fd746c;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    color: #999999;
+    font-size: 12px;
+    background-color: #ebebeb;
+    text-align: center;
+}
